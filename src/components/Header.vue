@@ -4,20 +4,12 @@
      <div class="logo">
       <img src="../assets/logo.png" alt="">
     </div>
-    <!--<div class="logo">
-      <h1 id="nomeLogo">CETEEP <p id="nomeLogo2">Centro Técnico</p></h1> 
-    </div>-->
+
     <div class="nav">
       <router-link class="link" to='/'>Home</router-link>
       <router-link class="link" to='/curso'>Curso</router-link>
       <router-link class="link" to='/escola'>Escola</router-link>
       <router-link class="link" to='/servicos'>Servicos</router-link>
-     <!-- <ul>
-          <li><a href="http:/">Home</a></li>
-          <li><a href="http:/curso">Curso</a></li>
-          <li><a href="http:/escola">Escola</a></li>
-          <li><a href="http:/servicos">Serviços</a></li>
-      </ul> -->
     </div>
 
     <!-- Menu responsivo -->
@@ -76,7 +68,7 @@
   width: 100%;
   height: 200px;
   z-index: 3;
-  /*position:absolute;*/
+  position:absolute;
 }
 
 .nav {
@@ -88,10 +80,9 @@
   font-size: 20px;
   font-weight: 500;
   position: absolute;
-  background-color: cyan;
 }
 
-.nav link{
+.link{
   display: flex;
   margin: 5px 25px;
 }
@@ -117,8 +108,7 @@ img {
   margin: 20px 30px;
   width: 180px;
   height: 70px;
-  background-color: rgb(33, 33, 242);
-  box-shadow: 3px 3px 3px rgb(87, 86, 86);
+  /*box-shadow: 3px 3px 3px rgb(87, 86, 86);*/
   cursor: pointer;
 }
 

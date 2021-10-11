@@ -1,11 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import 'bootstrap/dist/css/bootstrap.css'; 
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import App from './App.vue'
 import Home from './Views/Home.vue'
 import Curso from './Views/Curso.vue'
 
 Vue.config.productionTip = false
 
+
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 Vue.use(VueRouter);
 
 const router = new VueRouter ({
@@ -13,7 +19,7 @@ const router = new VueRouter ({
     path: '/',
     component: Home
   },{
-    path: 'Curso',
+    path: '/Curso',
     component: Curso
   }
 ]
