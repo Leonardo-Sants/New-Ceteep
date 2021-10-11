@@ -2,15 +2,13 @@
 
   <header class="header">
     <h1>CETEEP</h1>
-    <router-link to ='/Home'>Home</router-link>
-    <router-link to ='/Curso'>Curso</router-link>
   </header>
 
 </template>
 
 <script>
 export default {
-  name: 'Header',
+  name: 'Footer',
 }
 </script>
 
