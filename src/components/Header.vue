@@ -21,6 +21,7 @@
     </div>
 
     <!-- Menu responsivo -->
+     <!--
     <div class="menu">
       <b-button v-b-toggle.sidebar-no-header variant="outline-light"><b-icon icon="menu-button-wide-fill" aria-hidden="true"></b-icon></b-button>
       <b-sidebar id="sidebar-no-header" aria-labelledby="sidebar-no-header-title" no-header shadow>
@@ -37,7 +38,7 @@
           </div>
         </template>
       </b-sidebar>
-    </div>
+    </div> -->
 
 
   </header>
@@ -46,7 +47,7 @@
 
 <script>
   export default {
-      name: 'HomeComponent',
+      name: 'Header',
     methods: {
         openMenu() {
           let menu = document.querySelector('.menuDrop');
