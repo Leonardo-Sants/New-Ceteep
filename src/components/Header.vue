@@ -1,17 +1,17 @@
 <template>
 
   <header class="cabecalho">
-    <div class="logo">
-      <img src="../assets/imagens/Logo.png" alt="">
+     <div class="logo">
+      <img src="../assets/logo.png" alt="">
     </div>
     <!--<div class="logo">
       <h1 id="nomeLogo">CETEEP <p id="nomeLogo2">Centro Técnico</p></h1> 
     </div>-->
     <div class="nav">
-      <router-link to='/'>Home</router-link>
-      <router-link to='/curso'>Curso</router-link>
-      <router-link to='/escola'>Escola</router-link>
-      <router-link to='/servicos'>Servicos</router-link>
+      <router-link class="link" to='/'>Home</router-link>
+      <router-link class="link" to='/curso'>Curso</router-link>
+      <router-link class="link" to='/escola'>Escola</router-link>
+      <router-link class="link" to='/servicos'>Servicos</router-link>
      <!-- <ul>
           <li><a href="http:/">Home</a></li>
           <li><a href="http:/curso">Curso</a></li>
@@ -76,7 +76,7 @@
   width: 100%;
   height: 200px;
   z-index: 3;
-  position:absolute;
+  /*position:absolute;*/
 }
 
 .nav {
@@ -88,10 +88,10 @@
   font-size: 20px;
   font-weight: 500;
   position: absolute;
-
+  background-color: cyan;
 }
 
-.nav ul, li{
+.nav link{
   display: flex;
   margin: 5px 25px;
 }
