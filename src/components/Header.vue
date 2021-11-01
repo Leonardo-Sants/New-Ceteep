@@ -13,24 +13,26 @@
     </div>
 
     <!-- Menu responsivo -->
-     <!--
     <div class="menu">
-      <b-button v-b-toggle.sidebar-no-header variant="outline-light"><b-icon icon="menu-button-wide-fill" aria-hidden="true"></b-icon></b-button>
+      <div class="iconMenu">
+      <b-button v-b-toggle.sidebar-no-header variant="outline-light">
+        <b-icon icon="menu-button-wide-fill" aria-hidden="true"></b-icon>Menu</b-button>
+        </div>
       <b-sidebar id="sidebar-no-header" aria-labelledby="sidebar-no-header-title" no-header shadow>
         <template #default="{ hide }">
           <div class="p-3">
-            <h4 id="sidebar-no-header-title">Custom header sidebar</h4>
+            <h4 id="sidebar-no-header-title">CETEEP - Centro Técnico</h4>
             <ul class="menuSider">
-              <li><a href="http:/">Home</a></li>
-              <li><a href="http:/">Curso</a></li>
-              <li><a href="http:/">Escola</a></li>
-              <li><a href="http:/">Serviços</a></li>
+                <router-link class="link" to='/'>Home</router-link>
+                <router-link class="link" to='/curso'>Curso</router-link>
+                <router-link class="link" to='/escola'>Escola</router-link>
+                <router-link class="link" to='/servicos'>Servicos</router-link>
             </ul>
-            <b-button variant="primary" block @click="hide">Close Sidebar</b-button>
+            <b-button class="b-buttom" variant="primary" block @click="hide">Close Sidebar</b-button>
           </div>
         </template>
       </b-sidebar>
-    </div> -->
+    </div> 
 
 
   </header>
@@ -139,8 +141,32 @@ img {
   .nav {
     display: none;
   }
+
+  .logo{
+    display: none;
+  }
   .menu {
     display: flex;
+    color: blue;
+  }
+
+  .link,h4 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+  }
+
+  .b-buttom {
+    margin: 20px 90px;
+  }
+
+  .iconMenu {
+    display: flex;
+    margin-top: -130px;
+    font-size: 40px;
+    
   }
   
 }

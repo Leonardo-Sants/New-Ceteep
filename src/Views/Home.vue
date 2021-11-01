@@ -275,6 +275,21 @@ button {
     font-weight: 700;
     }
 
+    .sectionLogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -450px;
+        width: 350px;
+    }
+
+    #nomeLogo {
+        font-size: 3.5em;
+    }
+    #nomeLogo2 {
+        font-size: 0.25em;
+    }
+
     .sectionCurso p {
         display: flex;
         justify-content: center;
