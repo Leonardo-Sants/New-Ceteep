@@ -7,7 +7,7 @@
             fade
             indicators
             img-width="1024"
-            height="280"
+            height="480"
         >
             <b-carousel-slide class="carrosel">
                 <h1 id="carrossel"></h1>
@@ -56,7 +56,7 @@ export default {
 <style scoped>
 
 .carrosel{
-    height: 580px;
+    height: 630px;
 }
 
 </style>

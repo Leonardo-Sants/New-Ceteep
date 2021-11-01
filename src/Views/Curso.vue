@@ -25,9 +25,7 @@
         <!-- Imagens e descrições do curso -->
         <section class="DadosCurso">
             <div class="imgCurso">
-                <div id="sombra">
                 <img id="imgAjuste" src="../assets/SOLDAGEM.jpg" alt="Solda e corte">
-                </div>
                 <div id="imgTitulo">
                     <h1>Soldagem e Corte</h1>
                     <ul id="LinkCurso"><link rel="stylesheet" href="">Soldagem Por Fricção</ul>
@@ -44,9 +42,7 @@
 
         <section class="DadosCurso">
             <div class="imgCurso">
-                <div id="sombra">
                 <img id="imgAjuste" src="../assets/INDUSTRIA.jpg" alt="Solda e corte">
-                </div>
                 <div id="imgTitulo">
                     <h1>Indústria e Tecnologia</h1>
                     <ul id="LinkCurso"><link rel="stylesheet" href="">Automação Industrial</ul>
@@ -62,9 +58,7 @@
 
          <section class="DadosCurso">
             <div class="imgCurso">
-                <div id="sombra">
                 <img id="imgAjuste" src="../assets/Qualidade.jpg" alt="Solda e corte">
-                </div>
                 <div id="imgTitulo">
                     <h1>Controle de Qualidade</h1>
                     <ul id="LinkCurso"><link rel="stylesheet" href="">Macrografia Ensaio Visual</ul>
@@ -80,9 +74,7 @@
 
         <section class="DadosCurso">            
                 <div class="imgCurso">
-                    <div id="sombra">
                     <img id="imgAjuste" src="../assets/INDUSTRIA.jpg" alt="Solda e corte">
-                    </div>
                 <div id="imgTitulo">
                     <h1>Normas Internacionais</h1>
                     <ul id="LinkCurso"><link rel="stylesheet" href="">Inglês Técnico Instrumental</ul>
@@ -115,13 +107,13 @@ export default {
 
 .imgBanner, img {
     width: 100%;
-    height: 480px;
+    height: 630px;
 }
 
 img {
   background-color: #fff;
   width: 100%;
-  height: 570px;
+  height: 630px;
 }
 
 
@@ -202,11 +194,14 @@ section {
 
 .DadosCurso {
     display: flex;
+    margin-top: 20px;
+    height: 600px;
 }
 
 .imgCurso {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     margin-top: 30px;
 }
@@ -215,14 +210,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 210px;
-    margin: 50px;
+    width: 85%;
+    height: 510px;
+    margin:10px 0px;
     box-shadow: 3px 5px 1em rgb(87, 86, 86);
     border-radius: 20px;
+    position: absolute;
 }
 h1 {
-    margin:5px 50px;
+    margin:25px 50px;
 }
 
 #imgTitulo {
@@ -231,11 +227,13 @@ h1 {
     justify-content: center;
     font-size: 1em;
     font-weight: 700;
-    margin: 50px 10px 50px 200px;
-    width: 600px;
-    height: 280px;
+    margin: 50px 10px 50px 420px;
+    width: 40%;
+    height: 380px;
+    background-color: rgb(255, 255, 255);
     box-shadow:  3px 3px  0.5em rgb(87, 86, 86);
     border-radius: 20px;
+    position: relative;
 }
 
 #LinkCurso {
@@ -243,7 +241,7 @@ h1 {
     flex-direction: column;
     align-items: initial;
     color: blue;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 700;
     margin: 3px 50px;
 }

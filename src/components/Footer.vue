@@ -13,14 +13,21 @@
           <p>Rua: Jacareí</p>
           <p>Bairro: Meia Lua</p>
           <p>Cidade: Jacareí</p>
+          <p>Telefone: (12)996349547</p>
         </div>
 
         <div class="contatos">
           <h3>Contatos</h3>
-          <p class=" mb-2"><b-icon icon="telephone"></b-icon>  (12)996349547</p>
+          <div class="icons">
           <b-icon icon="instagram"></b-icon>
           <b-icon icon="Linkedin"></b-icon>
           <b-icon icon="facebook"></b-icon>
+          <b-icon icon="envelope"></b-icon>
+          </div>
+        </div>
+
+        <div class="create">
+          <p>Create by <a href="https://br.linkedin.com/in/leonardo-dos-santos-27a029193">Léo Santos</a></p>
         </div>
 
     </div>
@@ -45,6 +52,7 @@ export default {
   display: flex;
   width: 100%;
   height: 200px;
+  margin-top: 10px;
   background-color: blue;
 }
 
@@ -52,20 +60,28 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px 140px;
-  width: 100%;
+  margin: 1px 100px;
+  width: 50%;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .contatos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0px 140px;
-  width: 100%;
+  margin: 40px 100px;
+  width: 50%;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+.icons {
+  display: flex;
+  margin: 10px 0px;
+}
+
+.b-icon {
+  margin: 5px;
 }
 
 .logo {
@@ -97,4 +113,14 @@ export default {
   font-size: 20px;
   color: #fff;
 }
+
+.create {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+  width: 50%;
+  margin-top: 160px;
+}
+
 </style>

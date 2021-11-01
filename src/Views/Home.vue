@@ -18,59 +18,68 @@
                     com a sua certificação no mesmo dia.
                 </h2>
             </div>
+            <br>
+            <br>
+        </section> 
+    <!-- ********************  Seção das Imagens do curso *************************  -->
             <div class="imgCurso">
-                <div>
-                    <img id="imgAjuste" src="../assets/SOLDAGEM.jpg" alt="Solda e corte">
-                    <h1 id="imgTitulo">Soldagem e Corte</h1>
+                <div class="detalhes">
+                    <p id="imgTitulo1">Você sabe o que é soldagem por fricção?</p>
+                    <img id="imgAjuste" src="../assets/SoldaFricção.jpg" alt="Solda e corte" >
+                    <p id="imgTitulo">Venha conhecer nossa mais nova técnica de soldagem</p>
+                    <button>Saiba mais</button>
                 </div>
-                <div>
-                    <img id="imgAjuste" src="../assets/Qualidade.jpg" alt="Solda e corte">
-                    <h1 id="imgTitulo">Controle de Qualidade</h1>
+                  <div class="detalhes">
+                    <p id="imgTitulo1">Quer alcançar aquela vaga na área de qualidade?</p>
+                    <img id="imgAjuste" src="../assets/ControleQualidade.jpeg" alt="Solda e corte" >
+                    <p id="imgTitulo">Venha conhecer nossa mais nova técnica de soldagem </p>
+                    <button>Saiba mais</button>    
                 </div>
-                <div>
-                    <img id="imgAjuste" src="../assets/INDUSTRIA.jpg" alt="Solda e corte">
-                    <h1 id="imgTitulo">Indústria eTecnologia</h1>
+               
+                 <div class="detalhes">
+                    <p id="imgTitulo1">Você está preparado para o futuro?</p>
+                    <img id="imgAjuste" src="../assets/Tecnologia4.0.jpg" alt="Solda e corte" >
+                    <p id="imgTitulo">Venha conhecer nossa mais nova técnica de soldagem </p>
+                    <button>Saiba mais</button>
                 </div>
             </div>
+    <!-- ********************  Seção das Imagens do Serviço *************************  -->
+        <section class="sectionCurso">
+            <div>
+                <p>Prestação de serviços variáveis</p>
+            </div>
+            <div class="paragrafo">
+                <h2 id="paragrafoH2"> Precisando de algum serviço especial, temos o melhor para 
+                    você e sua empresa, click abaixo e conheça mais... </h2>
+            </div>
+            <br>
+            <br>
         </section> 
 
-        <section class="sectionServico">
-              <div>
-                <p>CETEEP Serviços</p>
-            </div>
             <div class="imgCurso">
-                <div>
-                    <img id="imgAjuste" src="../assets/Laboratorio.jpg">
-                    <h1 id="imgTitulo">Laboratório</h1>
-                    <ul id="imgLista">
-                        <li id="imgLista">Laboratório de ensaios Mecânico     </li>
-                        <li id="imgLista">Laboratório de ensaio de Soldagem   </li>
-                        <li id="imgLista">Laboratório de ensaios de END       </li>
-                        <li id="imgLista">Laboratório de ensaio de Macrografia</li>
-                    </ul>
+                <div class="detalhes">
+                    <p id="imgTitulo1">Auditoria</p>
+                    <img id="imgAjuste" src="../assets/Auditoria.jpg" alt="Solda e corte" >
+                    <p id="imgTitulo">Venha conhecer nossa mais nova técnica de soldagem</p>
+                    <button>Saiba mais</button>
                 </div>
-                <div>
-                    <img id="imgAjuste" src="../assets/Documentos.jpg">
-                    <h1 id="imgTitulo">Documentos</h1>
-                     <ul id="imgLista">
-                        <li id="imgLista">Laudos e Documentos técnicos</li>
-                        <li id="imgLista">Desenvolvimentos de Procedimentos</li>
-                        <li id="imgLista">Qualificação de Soldadores EPS/RQPS/RQS/IEIS</li>
-                    </ul>
+                  <div class="detalhes">
+                    <p id="imgTitulo1">Documentação Técnica</p>
+                    <img id="imgAjuste" src="../assets/Documentos.jpg" alt="Solda e corte" >
+                    <p id="imgTitulo">Venha conhecer nossa mais nova técnica de soldagem </p>
+                    <button>Saiba mais</button>    
                 </div>
-                <div>
-                    <img id="imgAjuste" src="../assets/Auditoria.jpg" alt="Solda e corte">
-                    <h1 id="imgTitulo">Auditoria</h1>
-                     <ul id="imgLista">
-                        <li id="imgLista">Laboratório de ensaios Mecânico</li>
-                        <li id="imgLista">Laboratório de ensaio de Soldagem</li>
-                        <li id="imgLista">Laboratório de ensaios de END</li>
-                        <li id="imgLista">Laboratório de ensaio de Macrografia</li>
-                    </ul>
+               
+                 <div class="detalhes">
+                    <p id="imgTitulo1">Ensaios</p>
+                    <img id="imgAjuste" src="../assets/Laboratorio.jpg" alt="Solda e corte" >
+                    <p id="imgTitulo">Venha conhecer nossa mais nova técnica de soldagem </p>
+                    <button>Saiba mais</button>
                 </div>
             </div>
-        </section> 
+        
 
+      
     </main>
 </template>
 
@@ -156,8 +165,9 @@ section {
 
 .sectionCurso {
     display: flex;
+    background-color: aliceblue;
     width: 100%;
-    height: 500px;
+    height: 250px;
     margin-top: 70px;
 }
 
@@ -177,24 +187,56 @@ section {
 
 .imgCurso {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
     width: 100%;
+    background-color: aliceblue;
+
+}
+
+.detalhes {
+    background-color: rgba(221, 218, 218, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 30%;
+    height: 500px;
+    width: 20%;
 }
 
 #imgAjuste {
     display: flex;
-    width: 250px;
-    height: 250px;
-    margin: 100px 30px 20px 30px;
-    box-shadow:  3px 3px  1em rgb(87, 86, 86);
+    padding: 2px;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    margin: 30px 0px;
+    box-shadow:  1px 1px  0.5em rgb(87, 86, 86);
+}
+
+#imgTitulo1 {
+    display: flex;
+    font-size: 1.2em;
+    margin: 10px 1px 10px 5px;
+    font-weight: 700;
 }
 
 #imgTitulo {
     display: flex;
-    justify-content: center;
     font-size: 1em;
+    margin: 10px 20px ;
     font-weight: 700;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 59, 252);
+    color: lemonchiffon;
+    font-size: 0.7em;
+    width: 100px;
 }
 
 #imgLista {

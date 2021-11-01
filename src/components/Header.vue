@@ -1,9 +1,9 @@
 <template>
 
   <header class="cabecalho">
-     <div class="logo">
-      <img src="../assets/logo.png" alt="">
-    </div>
+    <div class="logo">
+        <h1 id="nomeLogo">CETEEP <p id="nomeLogo2">Centro Técnico</p></h1>
+    </div>     
 
     <div class="nav">
       <router-link class="link" to='/'>Home</router-link>
@@ -63,6 +63,29 @@
   box-sizing: border-box;
 }
 
+.logo {
+  display: flex;
+  width: 100%;
+}
+
+#nomeLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin: 10px 20px;
+    width: 180px;
+    height: 65px;
+    border: 1px solid #fff;
+    background-color: rgb(33, 33, 242);
+}
+
+#nomeLogo2 {
+  font-size: 0.3em;
+  color: #fff;
+}
+
 .cabecalho {
   display: flex;
   width: 100%;
@@ -77,8 +100,8 @@
   width: 90%;
   margin: 15px;
   color: #fff;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 300;
   position: absolute;
 }
 
@@ -99,32 +122,6 @@ img {
   width: 250px;
   height: 250px;
   margin-top: 40px;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  margin: 20px 30px;
-  width: 180px;
-  height: 70px;
-  /*box-shadow: 3px 3px 3px rgb(87, 86, 86);*/
-  cursor: pointer;
-}
-
-#nomeLogo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
-}
-
-#nomeLogo2 {
-  font-size: 13px;
-  color: #fff;
 }
 
 .menu {

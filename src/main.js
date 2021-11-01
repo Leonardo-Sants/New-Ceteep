@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css'; 
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-import App from './App.vue'
-import Home from './Views/Home.vue'
-import Curso from './Views/Curso.vue'
+import App from './App.vue';
+import Home from './Views/Home.vue';
+import Curso from './Views/Curso.vue';
+import Escola from './Views/Escola.vue';
 
 Vue.config.productionTip = false
 
@@ -18,9 +19,14 @@ const router = new VueRouter ({
   routes: [{
     path: '/',
     component: Home
-  },{
+  },
+  {
     path: '/Curso',
     component: Curso
+  },
+  {
+    path: '/Escola',
+    component: Escola
   }
 ]
 })
